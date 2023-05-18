@@ -2,8 +2,6 @@
 # # -*- coding: utf-8 -*-
 
 if __name__ == "__main__":
-
-
     def sum_numbers_decorator(start):
         def sum_numbers(func):
             def wrapper(string):
@@ -19,7 +17,8 @@ if __name__ == "__main__":
     def sum_numbers(numbers):
         return sum(numbers)
 
+if __name__ == "__main__":
+    input_string = input("Введите строку целых чисел через пробел: ")
+    result = sum_numbers(input_string)
+    print("Сумма чисел:", result)
 
-input_string = input("Введите строку целых чисел через пробел: ")
-result = sum_numbers(input_string)
-print("Сумма чисел:", result)
